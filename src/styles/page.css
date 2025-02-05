@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.portfolio-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #a8dba8, #6fa78b, #4b7f59);
+  padding: 40px;
+  color: black;
+  text-align: center;
+}
+
+.name-header {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.role-description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.about {
+  max-width: 62%;
+  margin: 15px auto;
+}
+
+.section {
+  margin-top: 62px;
+  display: inline-grid;
+}
+
+.experiences,
+.educations {
+  display: inline-flex;
+  gap: 80px;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #4c6ef5;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 8px 16px;
+  border: 2px solid #4c6ef5;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(76, 110, 245, 0.3);
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  padding: 20px;
+  background-color: white;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-description {
+  color: #666;
+  margin-top: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #4c6ef5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+.footer-link {
+  color: #4c6ef5;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
